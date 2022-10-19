@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Typical Device Brakpoints 
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768 até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 4em;
+        text-shadow: 1px 1px 3px white;
+    }
+
+    div#container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    div {
+        margin: 20px;
+    }
+
+    img {
+        margin: 0px;
+        width: 250px;
+    }
+
+    span {
+        transform: translate(-50%, -50%);
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    span#sversus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}

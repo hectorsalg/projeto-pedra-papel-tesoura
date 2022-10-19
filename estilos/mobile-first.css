@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*
+    Cor derrota: #F87666
+    Cor empate/padrão: #F1E9DA
+    Cor vitória: #04F06A
+*/
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F1E9DA;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+img {
+    margin: 10px;
+    width: 180px;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease-out;
+}
