@@ -7,21 +7,31 @@
     <title>Jokenpô</title>
     <link rel="stylesheet" href="estilos/mobile-first.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <button class="botao-final" onclick="jogar()">JOGAR</button>
     <div id="container">
         <div id="jogador">
-            <img src="imagens/papel.png" alt="escolha do jogador">
+            <p>Você</p>
+            <img id="pref" src="imagens/papel.png" alt="escolha do jogador">
         </div>
         <div id="versus">
             <span id="sversus">VS</span>
         </div>
         <div id="cpu">
-            <img src="imagens/papel.png" alt="escolha da máquina">
+            <p>Computador</p>
+            <img id="robo" src="imagens/animação.gif" alt="escolha da máquina">
+        </div> 
+        <div>
+            <p id="res-total">
+                <span id="resul">VAMOS JOGAR!</span><br>
+                <button class="botao" value="pedra" onclick="escolher(value)"><img src="imagens/pedra.png" alt="Pedra"></button>
+                <button class="botao" value="papel" onclick="escolher(value)"><img src="imagens/papel.png" alt="Papel"></button>
+                <button class="botao" value="tesoura" onclick="escolher(value)"><img src="imagens/tesoura.png" alt="Tesoura"></button><br>
+            </p>
         </div>
     </div>
-    <div>
-        <span id="resul">VAMOS JOGAR!</span>
-    </div>
+    <script src="jscripts/main.js"></script>
 </body>
 </html>

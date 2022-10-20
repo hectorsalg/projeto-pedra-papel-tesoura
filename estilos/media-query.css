@@ -9,7 +9,7 @@ Desktop: de 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     html {
         font-size: 4em;
         text-shadow: 1px 1px 3px white;
@@ -22,7 +22,7 @@ Grandes telas: acima de 1200px
         transform: translate(-50%, -50%);
 
         display: flex;
-        justify-content: flex-start;
+        columns: 1rem 1rem 1rem;
     }
 
     div {
@@ -35,7 +35,7 @@ Grandes telas: acima de 1200px
     }
 
     span {
-        transform: translate(-50%, -50%);
+        transform: translate(-220%, -50%);
         transition: font-size .3s;
         transition-timing-function: ease;
     }
@@ -43,6 +43,19 @@ Grandes telas: acima de 1200px
     span#sversus {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 46%;
+    }
+
+    .botao-final {
+        padding: 20px;
+    }
+    .botao img {
+        width: 60px;
+        padding: 10px;
+    }
+
+    p {
+        padding: 10px;
+        line-height: 1.3em;
     }
 }
